@@ -1,6 +1,6 @@
 # gof-in-go
 
-(ChatGPT で出力)
+(「xxx パターンを使用することによって何が嬉しいのかを教えてください。」というプロンプトを ChatGPT に投げて出力している)
 
 - [Behavioral patterns](#behavioral-patterns)
   - [Iterator](#iterator)
