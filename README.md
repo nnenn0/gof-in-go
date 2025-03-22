@@ -1,6 +1,7 @@
 # gof-in-go
 
 「[増補改訂版 Java 言語で学ぶデザインパターン入門](https://www.sbcr.jp/product/4797327030/)」を基に Go 言語で GoF のデザインパターンを実装します。
+
 README は ChatGPT で生成しています。
 
 - [Creational patterns](#creational-patterns)
