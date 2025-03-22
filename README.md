@@ -1,6 +1,6 @@
 # gof-in-go
 
-「増補改訂版 Java 言語で学ぶデザインパターン入門」を基に Go 言語で GoF のデザインパターンを実装します。
+「[増補改訂版 Java 言語で学ぶデザインパターン入門](https://www.sbcr.jp/product/4797327030/)」を基に Go 言語で GoF のデザインパターンを実装します。
 
 - [Creational patterns](#creational-patterns)
   - [Factory Method](#factory-method)
