@@ -1,6 +1,6 @@
 # gof-in-go
 
-## ChatGPT 出力プロンプト
+## README ChatGPT 出力プロンプト
 
 ```Markdown
 xxxパターンを使用することによって何が嬉しいのかを教えてください。
