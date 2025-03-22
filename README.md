@@ -1,5 +1,7 @@
 # gof-in-go
 
+- [Creational patterns](#creational-patterns)
+  - [Factory Method](#factory-method)
 - [Behavioral patterns](#behavioral-patterns)
   - [Iterator](#iterator)
   - [Template Method](#template-method)
