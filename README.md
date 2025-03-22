@@ -1,5 +1,7 @@
 # gof-in-go
 
+「増補改訂版 Java 言語で学ぶデザインパターン入門」を基に Go 言語で GoF のデザインパターンを実装します。
+
 - [Creational patterns](#creational-patterns)
   - [Factory Method](#factory-method)
 - [Behavioral patterns](#behavioral-patterns)
