@@ -13,6 +13,9 @@ type Book struct {
 	Name string
 }
 
+// BookshelfがAggregateインターフェースを満たすことを確認
+var _ Aggregate = (*BookShelf)(nil)
+
 type BookShelf struct {
 	books []Book
 }
@@ -28,9 +31,6 @@ func (bs *BookShelf) AppendBook(b Book) {
 func (bs *BookShelf) Iterator() Iterator {
 	return &BookShelfIterator{bookShelf: bs}
 }
-
-// BookshelfがAggregateインターフェースを満たすことを確認
-var _ Aggregate = (*BookShelf)(nil)
 
 type BookShelfIterator struct {
 	bookShelf *BookShelf
