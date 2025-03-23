@@ -32,6 +32,10 @@ func (bs *BookShelf) Iterator() Iterator {
 	return &BookShelfIterator{bookShelf: bs}
 }
 
+func (bs *BookShelf) Len() int {
+	return len(bs.books)
+}
+
 type BookShelfIterator struct {
 	bookShelf *BookShelf
 	index     int
