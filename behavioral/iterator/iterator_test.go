@@ -1,12 +1,14 @@
-package iterator
+package iterator_test
 
 import (
 	"testing"
 
+	. "gof-in-go/behavioral/iterator"
+
 	"github.com/stretchr/testify/assert"
 )
 
-func TestBookShelf(t *testing.T) {
+func TestBookShelfLen(t *testing.T) {
 	book1 := Book{Name: "book1"}
 	book2 := Book{Name: "book2"}
 	book3 := Book{Name: "book3"}
@@ -16,8 +18,7 @@ func TestBookShelf(t *testing.T) {
 	bookshelf.AppendBook(book2)
 	bookshelf.AppendBook(book3)
 
-	assert.Equal(t, 3, len(bookshelf.books), "本棚のサイズが正しくありません")
-	assert.Equal(t, []Book{book1, book2, book3}, bookshelf.books, "本棚に追加された本が正しくありません")
+	assert.Equal(t, 3, bookshelf.Len(), "本棚のサイズが正しくありません")
 }
 
 func TestBookShelfIterator(t *testing.T) {
