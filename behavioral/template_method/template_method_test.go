@@ -1,16 +1,18 @@
-package templatemethod
+package template_method_test
 
 import (
 	"testing"
+
+	. "gof-in-go/behavioral/template_method"
 
 	"github.com/stretchr/testify/assert"
 )
 
 func TestFormatter(t *testing.T) {
-	charTemplate := &Template{formatter: &Char{ch: 'H'}}
+	charTemplate := NewTemplate(NewChar('H'))
 	assert.Equal(t, "<<HHHHH>>\n", charTemplate.Format(), "charが正しくフォーマットされていません")
 
-	strTemplate := &Template{formatter: NewStr("Hello, world.")}
+	strTemplate := NewTemplate(NewStr("Hello, world."))
 	expected := `+-------------+
 |Hello, world.|
 |Hello, world.|
