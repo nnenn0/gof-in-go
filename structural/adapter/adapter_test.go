@@ -1,7 +1,9 @@
-package adapter
+package adapter_test
 
 import (
 	"testing"
+
+	. "gof-in-go/structural/adapter"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -9,8 +11,8 @@ import (
 func TestBanner(t *testing.T) {
 	b := NewBanner("test")
 
-	assert.Equal(t, "(test)", b.encloseInParen(), "encloseInParenの戻り値が期待と異なります")
-	assert.Equal(t, "*test*", b.encloseInAster(), "encloseInAsterの戻り値が期待と異なります")
+	assert.Equal(t, "(test)", b.EncloseInParen(), "EncloseInParenの戻り値が期待と異なります")
+	assert.Equal(t, "*test*", b.EncloseInAster(), "EncloseInAsterの戻り値が期待と異なります")
 }
 
 func TestWrapBanner(t *testing.T) {

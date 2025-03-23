@@ -8,11 +8,11 @@ func NewBanner(text string) *Banner {
 	return &Banner{text: text}
 }
 
-func (b *Banner) encloseInParen() string {
+func (b *Banner) EncloseInParen() string {
 	return "(" + b.text + ")"
 }
 
-func (b *Banner) encloseInAster() string {
+func (b *Banner) EncloseInAster() string {
 	return "*" + b.text + "*"
 }
 
@@ -33,9 +33,9 @@ func NewWrapBanner(text string) *WrapBanner {
 }
 
 func (pb *WrapBanner) WrapWithWeak() string {
-	return pb.banner.encloseInParen()
+	return pb.banner.EncloseInParen()
 }
 
 func (pb *WrapBanner) WrapWithStrong() string {
-	return pb.banner.encloseInAster()
+	return pb.banner.EncloseInAster()
 }
