@@ -1,7 +1,9 @@
-package creational
+package factory_method_test
 
 import (
 	"testing"
+
+	. "gof-in-go/creational/factory_method"
 
 	"github.com/stretchr/testify/assert"
 )

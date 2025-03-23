@@ -1,4 +1,4 @@
-package creational
+package factory_method
 
 import "fmt"
 
