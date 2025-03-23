@@ -1,4 +1,4 @@
-package templatemethod
+package template_method
 
 import (
 	"strings"
@@ -12,6 +12,10 @@ type Formatter interface {
 
 type Template struct {
 	formatter Formatter
+}
+
+func NewTemplate(formatter Formatter) *Template {
+	return &Template{formatter: formatter}
 }
 
 func (t *Template) Format() string {
