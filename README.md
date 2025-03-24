@@ -12,6 +12,7 @@ README は ChatGPT で生成しています。
   - [Template Method](#template-method)
 - [Structural patterns](#structural-patterns)
   - [Adapter](#adapter)
+- [README ChatGPT 出力テキスト](#readme-chatgpt-出力プロンプト)
 
 ## Creational patterns
 
