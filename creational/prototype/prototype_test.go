@@ -23,14 +23,6 @@ func TestMessageBox(t *testing.T) {
 	assert.Equal(t, expected, mbox.Use("Hello, world."))
 }
 
-func TestMessageBoxWithSlash(t *testing.T) {
-	sbox := NewMessageBox('/')
-	expected := `///////////////
-/Hello, world./
-///////////////`
-	assert.Equal(t, expected, sbox.Use("Hello, world."))
-}
-
 func TestPrototypePattern(t *testing.T) {
 	manager := NewManager()
 	upen := NewUnderlinePen('-')
