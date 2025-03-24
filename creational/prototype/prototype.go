@@ -30,6 +30,9 @@ func (m *Manager) Create(prototypeName string) (Product, error) {
 	return p.CreateCopy()
 }
 
+// MessageBoxがProductインターフェースを満たすことを確認
+var _ Product = (*MessageBox)(nil)
+
 type MessageBox struct {
 	decochar rune
 }
@@ -47,6 +50,9 @@ func (m *MessageBox) Use(s string) string {
 func (m *MessageBox) CreateCopy() (Product, error) {
 	return &MessageBox{decochar: m.decochar}, nil
 }
+
+// UnderlinePenがProductインターフェースを満たすことを確認
+var _ Product = (*UnderlinePen)(nil)
 
 type UnderlinePen struct {
 	ulchar rune
