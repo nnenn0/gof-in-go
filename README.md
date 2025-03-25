@@ -2,7 +2,7 @@
 
 「[増補改訂版 Java 言語で学ぶデザインパターン入門](https://www.sbcr.jp/product/4797327030/)」を基に Go 言語で GoF のデザインパターンを実装します。
 
-README は ChatGPT で生成しています。
+README は ChatGPT/Claude で生成しています。
 
 - [Creational patterns](#creational-patterns)
   - [Factory Method](#factory-method)
@@ -14,7 +14,7 @@ README は ChatGPT で生成しています。
   - [Template Method](#template-method)
 - [Structural patterns](#structural-patterns)
   - [Adapter](#adapter)
-- [README ChatGPT 出力テキスト](#readme-chatgpt-出力プロンプト)
+- [README ChatGPT/Claude 出力テキスト](#readme-chatgptclaude-出力プロンプト)
 
 ## Creational patterns
 
@@ -206,7 +206,7 @@ Adapter を導入することで、異なるインターフェース間の変換
 
 Adapter パターンを導入することで、異なるインターフェースを持つクラス間の互換性を確保し、既存コードを変更せずに再利用できるようになります。また、クライアントコードの変更を最小限に抑えつつ、異なるライブラリやフレームワークとの統合がスムーズに行えるようになります。
 
-## README ChatGPT 出力プロンプト
+## README ChatGPT/Claude 出力プロンプト
 
 ```Markdown
 xxxパターンを使用することによって何が嬉しいのかを教えてください。
