@@ -55,8 +55,6 @@ func TestLinkFactoryPageGeneration(t *testing.T) {
 	content, err := GeneratePageContent(page)
 	assert.NoError(t, err)
 
-	print(content)
-
 	expected := `<!DOCTYPE html>
 <html><head><title>Blog Site</title></head>
 <body>
