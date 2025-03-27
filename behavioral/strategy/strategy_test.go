@@ -52,7 +52,6 @@ func TestWinningStrategy(t *testing.T) {
 	assert.Equal(t, hand1, hand2)
 	strategy.Study(false)
 	hand3 := strategy.NextHand()
-	println(hand1, hand2, hand3)
 	assert.NotEqual(t, hand2, hand3)
 }
 
