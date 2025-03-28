@@ -31,7 +31,7 @@ func NewGraphObserver() *GraphObserver {
 func (g *GraphObserver) Update(generator NumberGenerator) string {
 	count := generator.GetNumber()
 	graph := "GraphObserver:"
-	for i := 0; i < count; i++ {
+	for range count {
 		graph += "*"
 	}
 	return graph
