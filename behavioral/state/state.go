@@ -103,7 +103,6 @@ type SafeController struct {
 }
 
 func NewSafeController(title string) *SafeController {
-	fmt.Println(title)
 	return &SafeController{
 		currentState: NewDayState(),
 	}
@@ -111,7 +110,6 @@ func NewSafeController(title string) *SafeController {
 
 func (s *SafeController) SetClock(hour int) string {
 	clockString := fmt.Sprintf("現在時刻は%02d:00", hour)
-	fmt.Println(clockString)
 	s.clockString = clockString
 	s.currentState.DoClock(s, hour)
 	return clockString
@@ -119,7 +117,6 @@ func (s *SafeController) SetClock(hour int) string {
 
 func (s *SafeController) ChangeState(state State) string {
 	msg := fmt.Sprintf("%sから%sへ状態が変化しました。", s.currentState, state)
-	fmt.Println(msg)
 	s.screenLog += msg + "\n"
 	s.currentState = state
 	return msg
@@ -127,7 +124,6 @@ func (s *SafeController) ChangeState(state State) string {
 
 func (s *SafeController) CallSecurityCenter(msg string) string {
 	callMsg := "call! " + msg
-	fmt.Println(callMsg)
 	s.screenLog += callMsg + "\n"
 	s.securityCenter = append(s.securityCenter, msg)
 	return callMsg
@@ -135,7 +131,6 @@ func (s *SafeController) CallSecurityCenter(msg string) string {
 
 func (s *SafeController) RecordLog(msg string) string {
 	recordMsg := "record ... " + msg
-	fmt.Println(recordMsg)
 	s.screenLog += recordMsg + "\n"
 	s.logRecords = append(s.logRecords, msg)
 	return recordMsg
